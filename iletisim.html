@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>       
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şemsettin Baklavacı - İletişim</title>
+    <link rel="stylesheet" href="yeni web/public/css/default.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="public/js/messages.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Şemsettin Baklavacı</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="urunler.html">Ürünler</a></li>
+                <li><a href="index.html#about-us">Hakkımızda</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+            <div class="cart-section">
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="contact-page">
+        <section class="contact-hero">
+            <div class="container">
+                <h1>İletişim</h1>
+                <p>Sizden haber almaktan mutluluk duyarız</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- İletişim Formu -->
+                    <div class="contact-form-container">
+                        <h2>Bize Ulaşın</h2>
+                        <form id="contactForm" action="yeni web/public/php/iletisim.php" method="POST">
+                            <div class="form-group">
+                                <label for="name">Adınız Soyadınız</label>
+                                <input type="text" id="name" name="ad" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-posta Adresiniz</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Konu</label>
+                                <input type="text" id="subject" name="konu" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mesajınız</label>
+                                <textarea id="message" name="mesaj" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Gönder</button>
+                        </form>
+                    </div>
+
+                    <!-- İletişim Bilgileri -->
+                    <div class="contact-info-container">
+                        <div class="info-card">
+                            <h3>İletişim Bilgileri</h3>
+                            <ul class="contact-details">
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Gaziantep, Şahinbey, Güneş Mah. 123. Sok No:45</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    <span>+90 123 456 7890</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    <span>info@semsettin.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="business-hours">
+                            <h3>Çalışma Saatleri</h3>
+                            <ul>
+                                <li>Pazartesi - Cuma: 08:00 - 22:00</li>
+                                <li>Cumartesi: 09:00 - 21:00</li>
+                                <li>Pazar: 10:00 - 20:00</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Harita -->
+                <div class="map-container">
+                    <h2>Konum</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12747.276023591288!2d37.37826931281435!3d37.06674059721284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1531e85a1754d363%3A0xc5983d1f85e78732!2zxZ5haGlubmJleS9HYXppYW50ZXA!5e0!3m2!1str!2str!4v1653840742012!5m2!1str!2str"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Hakkımızda</h3>
+                <p>40 yıllık tecrübemizle sizlere en kaliteli baklavayı sunuyoruz.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Erişim</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="urunler.html">Ürünler</a></li>
+                    <li><a href="index.html#about-us">Hakkımızda</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>İletişim</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-phone"></i> +90 123 456 7890</li>
+                    <li><i class="fas fa-envelope"></i> info@semsettin.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Gaziantep, Türkiye</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Bülten</h3>
+                <p>Yeniliklerden haberdar olmak için bültenimize abone olun.</p>
+                <form class="newsletter-form" action="yeni web/public/php/bulten.php" method="POST">
+                    <input type="email" name="email" placeholder="E-posta adresiniz" required>
+                    <button type="submit">Abone Ol</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Şemsettin Baklavacı. Tüm Hakları Saklıdır. | <a href="sartlar.html">Kullanım Şartları</a></p>
+        </div>
+    </footer>
+</body>
+</html>
+
+NOT:
+Bu HTML kodu, Şemsettin Baklavacı web sitesinin iletişim sayfasını oluşturan - navigasyon menüsü, iletişim formu, adres bilgileri, çalışma saatleri,
+ Google Maps entegrasyonu ve footer içeren - kapsamlı bir sayfa yapısı sunuyor.
